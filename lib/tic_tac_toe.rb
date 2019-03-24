@@ -100,10 +100,11 @@ def winner(board)
 end
 
 def play(board)
-  input = gets
-  turns = 0
-  while turns < 9
-    turns += 1
+  until over?(board) || draw?(board)
     turn(board)
   end
+  if won?(board)
+    puts "Congratulations #{winner(board)}!"
+  elsif darw?(board)
+    puts "Draw"  
 end

@@ -107,4 +107,5 @@ def play(board)
     puts "Congratulations #{winner(board)}!"
   elsif darw?(board)
     puts "Draw"
+  end
 end

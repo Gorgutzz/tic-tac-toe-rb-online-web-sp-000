@@ -100,6 +100,7 @@ def winner(board)
 end
 
 def play(board)
+  input = gets
   turns = 0
   while turns < 9
     turns += 1
